@@ -15,6 +15,10 @@ def print_ratings(filename):
         restaurant_name, rating = line.split(":")
         restaurant_ratings[restaurant_name] = rating
 
+    user_restaurant = input("Add a restaurant: ")
+
+    restaurant_ratings[user_restaurant]= input("Give a score: ")
+
     for rest_name, rest_rating in sorted(restaurant_ratings.items()):
         print(f'{rest_name} is rated at {rest_rating}.')
 
